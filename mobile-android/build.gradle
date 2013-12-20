@@ -22,13 +22,14 @@ repositories {
 	
 	ivy {
 		name 'Adobe Air SDK'
+		artifactPattern 'http://airdownload.adobe.com/air/win/download/[revision]/[module].[ext]'
 		artifactPattern 'http://download.macromedia.com/air/win/download/[revision]/[module].[ext]'
 	}
 }
 
 dependencies {
-	flexSDK group: 'org.apache', name: 'apache-flex-sdk', version: '4.10.0', ext: 'zip'
-	airSDK group: 'com.adobe', name: 'AdobeAIRSDK', version: '3.8', ext: 'zip'
+	flexSDK group: 'org.apache', name: 'apache-flex-sdk', version: '4.11.0', ext: 'zip'
+	airSDK group: 'com.adobe', name: 'AdobeAIRSDK', version: '3.9', ext: 'zip'
 }
 
 air {
